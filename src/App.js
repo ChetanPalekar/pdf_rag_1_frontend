@@ -20,7 +20,7 @@ function App() {
 
   const checkApiConnection = async () => {
     try {
-      const response = await fetch('http://localhost:3000/health');
+      const response = await fetch('https://pdf-rag-1-ap1i.onrender.com/health');
       if (response.ok) {
         setIsConnected(true);
       } else {

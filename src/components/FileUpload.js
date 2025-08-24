@@ -57,7 +57,7 @@ const FileUpload = ({ onIndexed, isIndexing, setIsIndexing, setIndexingStatus })
         }, 200);
 
         try {
-          const response = await fetch('http://localhost:3000/api/indexing/pdf', {
+          const response = await fetch('https://pdf-rag-1-ap1i.onrender.com/api/indexing/pdf', {
             method: 'POST',
             body: formData
           });
