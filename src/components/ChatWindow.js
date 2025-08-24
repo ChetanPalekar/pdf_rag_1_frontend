@@ -34,7 +34,7 @@ const ChatWindow = ({ chatHistory, addMessage, isConnected }) => {
     setError('');
 
     try {
-      const response = await fetch('http://localhost:3000/api/retrieval/query', {
+      const response = await fetch('https://pdf-rag-1-ap1i.onrender.com/api/retrieval/query', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
